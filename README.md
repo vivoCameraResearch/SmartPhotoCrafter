@@ -7,7 +7,7 @@
 </h2>
 
 
-<a href=""><img src='https://img.shields.io/badge/arXiv-2501.11325-red?style=flat&logo=arXiv&logoColor=red' alt='arxiv'></a>&nbsp;
+<a href="https://arxiv.org/abs/2604.19587"><img src='https://img.shields.io/badge/arXiv-2501.11325-red?style=flat&logo=arXiv&logoColor=red' alt='arxiv'></a>&nbsp;
 <a href="https://vivocameraresearch.github.io/smartphotocrafterweb"><img src='https://img.shields.io/badge/Project-Page-Green' alt='Project'></a>&nbsp;
 <a href=""><img src='https://img.shields.io/badge/🤗-HuggingFace-blue' alt='HuggingFace'></a>&nbsp;
 <a href=""><img src='https://img.shields.io/badge/🤖-ModelScope-purple' alt='ModelScope'></a>&nbsp;
@@ -27,7 +27,8 @@
 ![teaser](./assets/teaser.png)
 
 ## 📣 News 
-- **`2026/04/07`**: We open-source the inference scripts and pretrained weights.
+- **`2026/04/07`**: We open-source the inference scripts.
+- **`2026/04/22`**: Our [Paper on ArXiv](https://arxiv.org/abs/2604.19587) is available!
 
 ## ✅ To-Do List for SmartPhotoCrafter Release
 - ✅ Release the inference code of SmartPhotoCrafter
