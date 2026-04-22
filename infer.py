@@ -125,13 +125,10 @@ class CustomQwenImageEditPipeline(QwenImageEditPipeline):
             with torch.no_grad():
                 outputs = self.text_encoder.generate(
                     **model_inputs, 
-                    max_new_tokens=1024, 
+                    max_new_tokens=1280, 
                     output_hidden_states=True,
                     return_dict_in_generate=True,
-                    do_sample=True,
-                    temperature=0.8,
-                    top_k=50,
-                    top_p=0.95, 
+                    do_sample=False,
                 )
             # hidden_states
             all_hidden_states = outputs.hidden_states
@@ -279,9 +276,9 @@ class QwenImageEdit():
         inputs = {
             "image": image,
             "prompt": prompt,
-            "true_cfg_scale": 4.0,
+            "true_cfg_scale": 1.0,
             "negative_prompt": "",
-            "num_inference_steps": 50,
+            "num_inference_steps": 20,
         }
 
         with torch.inference_mode():
