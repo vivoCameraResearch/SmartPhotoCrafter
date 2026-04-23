@@ -26,6 +26,12 @@
 ## 🖼️ Demo
 ![teaser](./assets/teaser.png)
 
+## 🖼️ Demo Video
+<a href="https://www.youtube.com/watch?v=2p3t1ju_CxA" target="_blank">
+  <img src="https://github.com/vivoCameraResearch/SmartPhotoCrafter/blob/9d48c1684b424d540d3e3686659d62b2fb4c2a61/assets/thumbnail.jpg" alt="SmartPhotoCrafter" width="760" height="450">
+</a>
+
+
 ## 📣 News 
 - **`2026/04/07`**: We open-source the inference scripts.
 - **`2026/04/22`**: Our [Paper on ArXiv](https://arxiv.org/abs/2604.19587) is available!
