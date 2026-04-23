@@ -9,7 +9,7 @@
 
 <a href="https://arxiv.org/abs/2604.19587"><img src='https://img.shields.io/badge/arXiv-2501.11325-red?style=flat&logo=arXiv&logoColor=red' alt='arxiv'></a>&nbsp;
 <a href="https://vivocameraresearch.github.io/smartphotocrafterweb"><img src='https://img.shields.io/badge/Project-Page-Green' alt='Project'></a>&nbsp;
-<a href=""><img src='https://img.shields.io/badge/🤗-HuggingFace-blue' alt='HuggingFace'></a>&nbsp;
+<a href="https://huggingface.co/papers/2604.19587"><img src='https://img.shields.io/badge/🤗-HuggingFace-blue' alt='HuggingFace'></a>&nbsp;
 <a href=""><img src='https://img.shields.io/badge/🤖-ModelScope-purple' alt='ModelScope'></a>&nbsp;
 <a href="http://www.apache.org/licenses/LICENSE-2.0"><img src='https://img.shields.io/badge/License-CC BY--NC--SA--4.0-lightgreen?style=flat&logo=Lisence' alt='License'></a>&nbsp;
 
