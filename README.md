@@ -98,6 +98,12 @@ All the materials, including code, checkpoints, and demos, are made available un
 
 ## 🎓 Citation
 
-```bibtex
+```
+@article{zeng2026smartphotocrafter,
+  title={SmartPhotoCrafter: Unified Reasoning, Generation and Optimization for Automatic Photographic Image Editing},
+  author={Zeng, Ying and Luo, Miaosen and Li, Guangyuan and Yang, Yang and Fan, Ruiyang and Shi, Linxiao and Yang, Qirui and Zhang, Jian and Liu, Chengcheng and Zheng, Siming and others},
+  journal={arXiv preprint arXiv:2604.19587},
+  year={2026}
+}
 
 ```
