@@ -34,13 +34,12 @@
 
 ## 📣 News 
 - **`2026/04/07`**: We open-source the inference scripts.
-- **`2026/04/22`**: Our [Paper on ArXiv](https://arxiv.org/abs/2604.19587) is available!
-
+- **`2026/04/22`**: Our [Paper on ArXiv](https://arxiv.org/abs/2604.19587) is available.
+- **`2026/05/26`**: We release the [pretrained weights](https://huggingface.co/katelyn2333/SmartPhotoCrafter)!
 ## ✅ To-Do List for SmartPhotoCrafter Release
-- ✅ Release the inference code of SmartPhotoCrafter
-- [  ]  Release the SmartPhotoCrafter pretrained weights
-
-
+✅ Release the inference code of SmartPhotoCrafter \
+✅ Release the SmartPhotoCrafter pretrained weights \
+[ ] Release the RL-stage training code
 
 
 ## Requirements and Installation
@@ -48,8 +47,7 @@
 ### Prepare Environment 
 Create a conda environment & install requirements 
 ```shell
-# python==3.10.0 cuda==12.4 torch==2.5
-conda create -n smartphotocrafter python==3.10.0
+conda create -n smartphotocrafter python=3.10
 conda activate smartphotocrafter
 pip install -r requirements.txt
 ```
@@ -57,34 +55,26 @@ pip install -r requirements.txt
 ### 📦 Pretrained Model Weights
 | Models           | Download |   Features |
 |------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| SmartPhotoCrafter      | 🤗 [Huggingface]() 🤖 [ModelScope]()         | 
+| SmartPhotoCrafter      | 🤗 [Huggingface](https://huggingface.co/katelyn2333/SmartPhotoCrafter)    | Fine-tuned Model |
 Qwen-Image-Edit-2509 | 🤗 [Huggingface](https://huggingface.co/Qwen/Qwen-Image-Edit-2509) 🤖 [ModelScope](https://www.modelscope.cn/models/Qwen/Qwen-Image-Edit-2509) | Base Model |
  
 
 ## 😉 Demo Inference
-We provide scripts for both automatic and manual editing. Automatic editing only requires inputting one image, while manual editing requires adding a prompt.
+Please download the pretrained weights and put them under `models/`.
+Automatic image editing only requires inputting one image, and SmartPhotoCrafter will output an enhanced version under `example/output/`.
 
-Automatically edit reasoning scripts
-```PowerShell
-bash scripts/inference/automatic-edit.sh
-```
-
-Manual edit reasoning scripts
-```PowerShell
-bash scripts/inference/manual-eidt.sh
-```
-
-Script example
+Inference example
 ```PowerShell
 CUDA_VISIBLE_DEVICES=0 python infer.py \
-    --model_path "ckpt/Qwen-Image-Edit-2509" \
-    --dit_path "ckpt/DiT.safetensors" \
-    --vlm_path "ckpt/text_encoder" \
-    --image_path "example/841012.png" \
-    --output_folder "example/output/automatic" \
-    --seed 42 \
+--dit_path "models/SmartPhotoCrafter/dit.safetensors" \
+--vlm_path "models/SmartPhotoCrafter/vlm/" \
+--vae_path "models/Qwen-Image-Edit-2509/vae/diffusion_pytorch_model.safetensors" \
+--dit_lora_path "models/SmartPhotoCrafter/dit_lora" \
+--vlm_lora_path "models/SmartPhotoCrafter/vlm_lora" \
+--image_path "example/input/test.png" \
+--output_folder "example/output/" \
+--seed 42
 ```
-
 
 ## 🚀 Training
 Coming Soon ...
