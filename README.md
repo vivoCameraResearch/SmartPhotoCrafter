@@ -35,10 +35,10 @@
 ## 📣 News 
 - **`2026/04/07`**: We open-source the inference scripts.
 - **`2026/04/22`**: Our [Paper on ArXiv](https://arxiv.org/abs/2604.19587) is available.
-- **`2026/05/26`**: We release the [pretrained weights](https://huggingface.co/katelyn2333/SmartPhotoCrafter)!
+- **`2026/05/26`**: The [weights](https://huggingface.co/katelyn2333/SmartPhotoCrafter) are released!
 ## ✅ To-Do List for SmartPhotoCrafter Release
 ✅ Release the inference code of SmartPhotoCrafter \
-✅ Release the SmartPhotoCrafter pretrained weights \
+✅ Release the SmartPhotoCrafter weights \
 [ ] Release the RL-stage training code
 
 
