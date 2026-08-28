@@ -254,7 +254,7 @@ class QwenImagePipeline(_BaseQwenImagePipeline):
             pipe.processor = Qwen2VLProcessor.from_pretrained(vlm_path)
             pipe.text_encoder = Qwen2_5_VLForConditionalGeneration.from_pretrained(
                 vlm_path,
-                torch_dtype=torch_dtype,
+                dtype=torch_dtype,
                 device_map="auto" if str(device) == "cuda" else None,
             ).eval()
             print(f"[Load] VLM + tokenizer + processor from: {vlm_path}")
